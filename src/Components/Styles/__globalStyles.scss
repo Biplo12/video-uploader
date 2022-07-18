@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./__variables.scss";
 @import "../Sidebar/__sidebar";
+@import "../Topbar/__topbar";
 
 * {
   padding: 0;
@@ -15,6 +16,18 @@ html {
 
 ul {
   list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
 }
 
 a {

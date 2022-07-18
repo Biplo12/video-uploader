@@ -1,0 +1,112 @@
+.sidebar-container {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .sidebar-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    .box {
+      display: none;
+    }
+    ul {
+      img {
+        height: 20px;
+        padding-right: 0.5rem;
+        transition: all 0.15s ease-out;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.15s ease-out;
+      }
+    }
+    li {
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    li a:hover {
+      p {
+        color: $blue;
+      }
+      img {
+        filter: brightness(0) saturate(100%) invert(28%) sepia(45%)
+          saturate(4532%) hue-rotate(204deg) brightness(92%) contrast(95%);
+      }
+    }
+    .navbar-items {
+      li:not(:first-child) {
+        padding-top: 3rem;
+      }
+    }
+    .navbar-categories {
+      li:not(:first-child) {
+        padding-top: 2rem;
+      }
+      h3 {
+        padding-top: 1rem;
+        border-top: 1px solid $grey;
+      }
+    }
+    .navbar-options {
+      li {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .active {
+    .box {
+      width: 6px;
+      height: 30px;
+      display: flex;
+      background-color: $blue;
+      border-radius: 0 10px 10px 0;
+      position: absolute;
+      left: 0;
+    }
+    img {
+      filter: brightness(0) saturate(100%) invert(28%) sepia(45%)
+        saturate(4532%) hue-rotate(204deg) brightness(92%) contrast(95%);
+    }
+    p {
+      color: $blue;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    width: 50px;
+    .sidebar-nav ul {
+      a p {
+        display: none;
+      }
+      h3 {
+        display: none;
+      }
+      button p {
+        display: none;
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@ const Videos = () => {
     <div className="videos-container">
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -17,6 +18,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -26,6 +28,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -35,6 +38,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -44,6 +48,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -53,6 +58,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -62,6 +68,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -71,6 +78,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -80,6 +88,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -89,6 +98,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -98,6 +108,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -107,6 +118,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -116,6 +128,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -125,6 +138,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -134,6 +148,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -143,6 +158,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -152,6 +168,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -161,6 +178,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -170,6 +188,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -179,6 +198,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -188,6 +208,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -197,6 +218,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -206,6 +228,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}
@@ -215,15 +238,7 @@ const Videos = () => {
       />
       <Video
         direction={"/"}
-        thumbnail={thumbnail}
-        profileAvatar={avatar}
-        channelName={"Eikona"}
-        title={"Eikona - No Sweat"}
-        views={312}
-        date={10}
-      />
-      <Video
-        direction={"/"}
+        profileDirection={"/profile/"}
         thumbnail={thumbnail}
         profileAvatar={avatar}
         channelName={"Eikona"}

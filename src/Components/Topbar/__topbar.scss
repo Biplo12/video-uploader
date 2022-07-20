@@ -16,18 +16,18 @@
     align-items: center;
     .topbar-logo {
       img {
-        height: 30px;
+        height: 40px;
       }
     }
   }
   .topbar-center {
-    width: 35%;
+    width: 45%;
     padding: 0 0.5rem;
     .topbar-searchbar {
       width: 100%;
       display: flex;
       border: 1px solid $grey;
-      padding: 0.75rem 1rem;
+      padding: 0.5rem 1rem;
       border-radius: 25px;
       input {
         width: 100%;
@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .topbar-container {
     padding: 1.5rem 1rem;
     .topbar-center {

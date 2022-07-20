@@ -9,8 +9,6 @@ import gaming from "./Icons/gaming.svg";
 import music from "./Icons/music.svg";
 import movies from "./Icons/movies.svg";
 import news from "./Icons/news.svg";
-
-import darkMode from "./Icons/dark-mode.svg";
 import settings from "./Icons/settings.svg";
 
 export {
@@ -24,6 +22,5 @@ export {
   music,
   movies,
   news,
-  darkMode,
   settings,
 };

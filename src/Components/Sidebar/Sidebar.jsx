@@ -1,4 +1,3 @@
-import React from "react";
 import Item from "./Item";
 import {
   home,
@@ -11,7 +10,6 @@ import {
   music,
   movies,
   news,
-  darkMode,
   settings,
 } from "../../assets/index";
 
@@ -43,12 +41,6 @@ const Sidebar = () => {
           <Item destination={"/news"} src={news} navItem="News" />
         </ul>
         <ul className="navbar-options">
-          <li>
-            <button>
-              <img src={darkMode} alt="darkmode icon" />
-              <p>Dark mode</p>
-            </button>
-          </li>
           <Item destination={"/settings"} src={settings} navItem="Settings" />
         </ul>
       </div>

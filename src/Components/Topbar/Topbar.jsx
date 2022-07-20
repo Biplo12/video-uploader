@@ -1,23 +1,18 @@
 import { useState, useEffect } from "react";
-import logo from "../../assets/Images/logo-black.png";
+import { Link } from "react-router-dom";
 import logoSmall from "../../assets/Images/logo-small-black.png";
 import avatar from "../../assets/Images/avatar.jpg";
 import search from "../../assets/Icons/search.svg";
 import upload from "../../assets/Icons/upload.svg";
 const Topbar = () => {
-  //onSroll style change
-  const [logoResponsive, setLogoResponsive] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    setLogoResponsive(width >= 500 ? false : true);
-    console.log(width);
-  }, [width]);
   return (
     <div className="topbar-container">
       <div className="topbar-left">
-        <div className="topbar-logo">
-          <img src={logoResponsive ? logoSmall : logo} alt="logo" />
-        </div>
+        <Link to="/">
+          <div className="topbar-logo">
+            <img src={logoSmall} alt="logo" />
+          </div>
+        </Link>
       </div>
       <div className="topbar-center">
         <div className="topbar-searchbar">

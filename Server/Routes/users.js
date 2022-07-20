@@ -8,27 +8,29 @@ import {
   update,
   deleteUser,
 } from "../Controllers/user.js";
+import { verifyToken } from "../verifyToken.js";
 
 const router = express.Router();
 
 //UPDATE USER
-router.put("/:id", update);
+router.put("/:id", verifyToken, update);
+
 //DELETE USER
-router.delete("/:id", deleteUser);
+router.delete("/:id", verifyToken, deleteUser);
 
 //GET A USER
 router.get("/find/:id", getUser);
 
 //SUBSCRIBE USER
-router.put("/sub/:id", subscribe);
+router.put("/sub/:id", verifyToken, subscribe);
 
 //UNSUBSCRIBE USER
-router.put("/sub/:id", unSubscribe);
+router.put("/unsub/:id", verifyToken, unSubscribe);
 
 //LIKE A VIDEO
-router.put("/like/:id", like);
+router.put("/like/:videoId", verifyToken, like);
 
 //DISLIKE A VIDEO
-router.put("/sub/:id", dislike);
+router.put("/dislike/:videoId", verifyToken, dislike);
 
 export default router;

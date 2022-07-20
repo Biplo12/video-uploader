@@ -1,10 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
-import dotenv from "dotenv";
 import userRoutes from "./Routes/users.js";
 import videoRoutes from "./Routes/videos.js";
 import commentRoutes from "./Routes/comments.js";
 import authRoutes from "./Routes/auth.js";
+import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 dotenv.config();
 
@@ -24,9 +24,8 @@ const connect = () => {
 app.use(cookieParser());
 
 app.use(express.json());
-
 app.use("/api/users", userRoutes);
-app.use("/api/video", videoRoutes);
+app.use("/api/videos", videoRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 

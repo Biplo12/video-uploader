@@ -4,6 +4,8 @@ import {
   addVideo,
   addView,
   deleteVideo,
+  getBySearch,
+  getByTag,
   getVideo,
   randomVideo,
   subscribedVideos,
@@ -29,5 +31,9 @@ router.get("/trend", trendVideo);
 router.get("/random", randomVideo);
 //SUBSCRIBED CHANNELS VIDEOS
 router.get("/sub", verifyToken, subscribedVideos);
+//TAGGED VIDEOS
+router.get("/tags", getByTag);
+//SEARCHED VIDEOS
+router.get("/search", getBySearch);
 
 export default router;

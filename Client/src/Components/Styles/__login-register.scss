@@ -1,13 +1,13 @@
 .login-register-container {
   width: calc(100% - 200px);
   min-height: 91.5vh;
-  height: auto;
   margin-top: 8.5vh;
   margin-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -16,42 +16,32 @@
   .title-description {
     font-size: 1rem;
     font-weight: 300;
-    text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem 0.5rem;
   }
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    input {
-      border: 1px solid black;
-      outline: none;
-      padding: 0.75rem 1rem;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
+  input {
+    width: 85%;
+    max-width: 300px;
+    border: 1px solid $blue;
+    padding: 0.75rem 2rem;
   }
-  a {
-    text-align: right;
+  input:not(:first-child) {
+    margin: 0.5rem 0;
   }
   button {
-    padding: 1em 2.1em 1.1em;
-    border-radius: 3px;
-    color: #fbdedb;
-    display: inline-block;
+    width: 85%;
+    max-width: 300px;
     background: $blue;
-    font-weight: 800;
-    font-size: 0.85em;
-    text-transform: uppercase;
+    padding: 0.75rem 2rem;
+    color: white;
+    margin-top: 1rem;
   }
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 10px 0;
+  .password-reset {
+    margin: 1rem 0;
+  }
+  .signup-link {
+    margin-top: 0.5rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .login-register-container {
     width: calc(100% - 75px);

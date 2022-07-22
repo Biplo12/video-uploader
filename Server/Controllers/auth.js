@@ -1,13 +1,10 @@
-import mongoose from "mongoose";
 import User from "../Models/User.js";
 import bcrypt from "bcryptjs";
 import { createError } from "../error.js";
 import jwt from "jsonwebtoken";
-import { response } from "express";
 
 import dotenv from "dotenv";
 dotenv.config();
-
 export const signup = async (req, res, next) => {
   try {
     const salt = bcrypt.genSaltSync(10);
@@ -36,7 +33,6 @@ export const signin = async (req, res, next) => {
       })
       .status(200)
       .json(others);
-
     res.status(200).json("U logged successfully");
   } catch (err) {
     next(err);

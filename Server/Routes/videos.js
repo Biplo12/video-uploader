@@ -1,5 +1,4 @@
 import express from "express";
-import { subscribe } from "../Controllers/user.js";
 import {
   addVideo,
   addView,
@@ -13,6 +12,7 @@ import {
   updateVideo,
 } from "../Controllers/video.js";
 import { verifyToken } from "../verifyToken.js";
+
 const router = express.Router();
 
 //CREATE A VIDEO

@@ -1,0 +1,36 @@
+.nouser-container {
+  width: calc(100% - 200px);
+  height: calc(100vh - 8.5vh);
+  margin-left: 200px;
+  margin-top: 8.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  button {
+    border: 1px solid $blue;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nouser-container {
+    width: calc(100% - 75px);
+    margin-left: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nouser-container {
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 2rem 1rem;
+  }
+}

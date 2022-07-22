@@ -6,6 +6,7 @@ import commentRoutes from "./Routes/comments.js";
 import authRoutes from "./Routes/auth.js";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 dotenv.config();
 
 const app = express();
@@ -22,6 +23,7 @@ const connect = () => {
 };
 
 app.use(cookieParser());
+app.use(cors());
 
 app.use(express.json());
 app.use("/api/users", userRoutes);

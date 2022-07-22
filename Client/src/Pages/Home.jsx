@@ -2,12 +2,12 @@ import React from "react";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import Topbar from "../Components/Topbar/Topbar";
 import Videos from "../Components/Videos/Videos";
-const Home = () => {
+const Home = ({ type }) => {
   return (
     <>
       <Topbar />
       <Sidebar />
-      <Videos />
+      <Videos type={type} />
     </>
   );
 };

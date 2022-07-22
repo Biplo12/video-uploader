@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import logoSmall from "../../assets/Images/logo-small-black.png";
-import avatar from "../../assets/Images/avatar.jpg";
+import noAvatar from "../../assets/Images/avatar.jpg";
 import search from "../../assets/Icons/search.svg";
-import upload from "../../assets/Icons/upload.svg";
 const Topbar = () => {
   return (
     <div className="topbar-container">
@@ -21,8 +20,7 @@ const Topbar = () => {
         </div>
       </div>
       <div className="topbar-right">
-        {/* <img src={upload} alt="upload icon" className="upload-icon" /> */}
-        <img src={avatar} alt="user avatar" />
+        <img src={noAvatar} alt="user avatar" />
       </div>
     </div>
   );
